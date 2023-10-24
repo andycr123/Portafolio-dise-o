@@ -1,5 +1,70 @@
+
+/*Inicio de estilo general de la pgaina*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Fin de estilo general de la pagina*/
+
+/*-------Main page------*/
+
+/*-------Header------*/
+
+    /*INIcio de body*/
+body {
+    height: auto;
+    width: 1220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;     
+}
+
+    /*Fin de body*/
+
+    /* Inicio de header */
+header {
+    width: 1100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+}
+
+    /* Fin del header */
+
+
+    /* Inicio de etiquetas imagenes */
+.logo {
+    height: 20px; 
+    width: auto;
+}
+
+.img-redes {
+    height: 20px;
+    width: auto;
+}
+
+.left {
+    width: auto;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rigth {
+    gap: 20px;
+    display: flex;
 }
