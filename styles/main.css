@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all ease 0.95s;
 }
 
 /* Fin de estilo general de la pagina*/
@@ -14,6 +15,10 @@
 /*-------Header------*/
 
     /*INIcio de body*/
+html{
+    scroll-behavior: smooth; 
+}
+
 body {
     height: auto;
     width: 100%;
@@ -27,6 +32,9 @@ body {
 
     /* Inicio de header */
 header {
+    background-color: #8bf0f03a;
+    position: sticky;
+    top: 1;
     width: 100%;
     height: 50%;
     display: flex;
@@ -36,10 +44,43 @@ header {
     flex-wrap: nowrap;
 }
 
+    a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+
     /* Fin del header */
 
 
     /* Inicio de etiquetas imagenes */
+
+    /*Inicio de animacion del header*/
+.subrayado {
+        position: relative;
+}
+    
+.subrayado::after {
+        z-index: 5;
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 3px; /* Ajusta la posición del subrayado según tus preferencias */
+        width: 100%;
+        height: 2px; /* Ajusta el grosor del subrayado según tus preferencias */
+        background-color: #000; /* Cambia el color del subrayado según tus preferencias */
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+        border-radius: 50px;
+}
+    
+.subrayado:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+}
+/*Fin de animacion del header*/
+
 .logo {
     height: 20px; 
     width: auto;
